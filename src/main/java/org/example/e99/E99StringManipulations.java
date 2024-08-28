@@ -15,7 +15,6 @@ public class E99StringManipulations {
 
         // Remove all spaces and convert the string to lowercase
         words = words.toLowerCase().replace(" ","");
-        System.out.println(words);
 
         // Check if the string is a palindrome
         StringBuilder reversedWords = new StringBuilder(words);

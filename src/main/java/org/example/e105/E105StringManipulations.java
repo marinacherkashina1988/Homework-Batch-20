@@ -8,7 +8,7 @@ public class E105StringManipulations {
         Scanner inp = new Scanner(System.in);
 
         // Prompt the user to input a string
-        System.out.print("In:");
+        System.out.println("In:");
         String word = inp.nextLine();
 
 
@@ -19,5 +19,6 @@ public class E105StringManipulations {
                 System.out.print(word.charAt(i));
             }
         }
+        System.out.println();
     }
 }

@@ -8,7 +8,7 @@ public class E100StringManipulations {
         Scanner input = new Scanner(System.in);
 
         // Prompt the user to input a string
-        System.out.println("In:");
+        System.out.println("In: ");
 
         // Read the input string
         String word = input.nextLine();

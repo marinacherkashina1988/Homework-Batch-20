@@ -6,6 +6,7 @@ public class E104StringManipulations {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
+        System.out.println("In:");
         String[] arr = new String[5];
 
         //write code from here

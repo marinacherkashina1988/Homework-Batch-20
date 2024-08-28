@@ -8,8 +8,6 @@ public class E95StringManipulations {
         Scanner input = new Scanner (System.in);
 
         // Prompt the user to input a string value
-
-
         // Read the input string
         String fruit = input.nextLine();
 
@@ -17,6 +15,6 @@ public class E95StringManipulations {
         String letters = fruit.substring(0,3);
 
         // Print the result in the specified format
-        System.out.println("The first 3 letters of "+fruit+" is "+letters);
+        System.out.println("Please enter a word: The first 3 letters of "+fruit+" is "+letters);
     }
 }
