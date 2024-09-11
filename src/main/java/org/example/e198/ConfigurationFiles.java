@@ -38,7 +38,7 @@ public class ConfigurationFiles {
             return Integer.parseInt(properties.getProperty("implicitWait"));
         }
 
-        public static WebDriver openBrowser (String browser, String url, int implicitWait) {
+        public static WebDriver openBrowser (String browser, String url, int implicitWait) throws InterruptedException {
 
             WebDriver driver= null;
 
@@ -56,12 +56,12 @@ public class ConfigurationFiles {
                     System.out.println("Browser type is not supported");
             }
 
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWait));
+            Thread.sleep(implicitWait);
             driver.get(url);
             return driver;
         }
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         String path = "C:\\Users\\ahmed\\IdeaProjects\\HomeworkBatch20\\src\\Files\\config.properties";
 
@@ -76,8 +76,7 @@ public class ConfigurationFiles {
         System.out.println("Implicit Wait: " + implicitWait + " seconds");
 
         WebDriver driver = ConfigReader.openBrowser(browser, url, implicitWait);
-        if (driver!=null){
-            driver.quit();
-        }
+        driver.quit();
+
     }
 }
